@@ -1,0 +1,460 @@
+header {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid rgb(237, 234, 234);
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+    height: 30px;
+    width: 110px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    height: 19px;
+    width: 505px;
+}
+
+.nav li {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #e7fafe;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 70px;
+}
+
+.heading {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hot-recipes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.info-line {
+    display: flex;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.info-line span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.image-wrapper {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+}
+
+.round_image {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100px;
+    z-index: 2;
+}
+
+.main-image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foodCategories {
+    padding: 40px;
+    font-size: 20px;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.category-item {
+    text-align: center;
+}
+
+.category-item img {
+    width: 140px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.viewAll {
+    display: inline-block;
+    background-color: #e7fafe;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.viewAll :hover {
+    background-color: red;
+}
+
+.textContainer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.recipeMenu {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.recipeMenu>div {
+    background-color: #e7fafe;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.recipeMenu>div:hover {
+    transform: scale(1.02);
+}
+
+.recipeMenu img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #f8ecec;
+}
+
+.foodImageContent {
+    padding: 15px;
+}
+
+.foodImageContent h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}
+
+.info img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.backgroundImage {
+    max-width: 100%;
+    height: 100%;
+}
+
+.menuImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    margin: 40px 20px;
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+
+.marketingImage {
+    position: relative;
+    background-color: rgb(1, 50, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .recipeMenu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .recipeMenu {
+        grid-template-columns: 1fr;
+    }
+}
+
+.highlightSectionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.highlightParagraph {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.highlightParagraph h2 {
+    margin-top: 0;
+}
+
+.highlightParagraph p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.highlightParagraph button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.highlightImage {
+    max-width: 400px;
+}
+
+.highlightImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .highlightSectionContainer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .highlightParagraph,
+    .highlightImage {
+        max-width: 100%;
+    }
+
+    .highlightImage {
+        margin-top: 20px;
+    }
+}
+
+.instagramPage {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.instagramPics {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.instagramPics>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.instagramPics img {
+    max-width: 100%;
+    display: block;
+}
+
+.centeredDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.instagramButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.newsletter {
+    position: relative;
+    background: #eafaff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.newsletter {
+  position: relative;
+  background: #eafaff;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.newsletterContent p {
+  font-size: 14px;
+  color: #666;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+
+.newsletterContent h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.newsletterContent p {
+  font-size: 14px;
+  color: #666;
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+.formBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50px;
+  padding: 5px;
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.formBox input {
+  border: none;
+  outline: none;
+  padding: 14px 20px;
+  border-radius:50px;
+  font-size: 14px;
+  width: 250px;
+  background: transparent;
+  height: 10px;
+}
+
+.formBox input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.formBox button {
+  padding: 0 24px;
+  height: 48px;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.formBox button:hover {
+  background-color: #5a5959;
+}
+
+.leftImg, .rightImg {
+  position: absolute;
+  width: 210px;
+  object-fit: contain;
+}
+
+.leftImg {
+  left: 0;
+  bottom: 0;
+}
+
+.rightImg {
+  right: 0;
+  bottom: 0;
+}
